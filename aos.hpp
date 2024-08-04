@@ -46,10 +46,10 @@ public:
 
     void init(std::uint64_t nSize, arrType defaultVal)
     {
-        vsize = nSize;
         try
         {
-            if (data == nullptr) delete[] data;
+            vsize = nSize;
+            if (data != nullptr) delete[] data;
             data = new arrType[nSize];
             std::fill_n(data, nSize, defaultVal);
         }
