@@ -4,6 +4,9 @@
 #include <random>
 #include <thread>
 
+#ifndef AOS_H
+#define AOS_H
+
 template <typename arrType>
 class AOS // AOS = array on steroids
 {
@@ -322,3 +325,5 @@ public:
         std::copy(other.data, other.data + vsize, data);
     }
 };
+
+#endif
