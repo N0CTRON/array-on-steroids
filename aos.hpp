@@ -2,6 +2,7 @@
 #include <stdexcept>
 #include <algorithm>
 #include <random>
+#include <thread>
 
 template <typename arrType>
 class AOS // AOS = array on steroids
